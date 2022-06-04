@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            /* align-items: center; */
+        }
+    
+        .align-container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Auto</p>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Texto para preenchimento</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+    <p>Mix</p>
+    <section class="flex-container ">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Texto para preenchimento, Texto para preenchimento</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+    <h1>Column</h1>
+    <p>Auto</p>
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Texto para preenchimento</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+    <p>Mix</p>
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Texto para preenchimento, Texto para preenchimento</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+</body>
+</html>

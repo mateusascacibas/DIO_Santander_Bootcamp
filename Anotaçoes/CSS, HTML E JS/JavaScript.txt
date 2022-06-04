@@ -1,0 +1,19 @@
+JS é interpretada
+
+Interpretada - Tá sendo rodada em tempo real, o codigo tá sendo disponibilizado automaticamente, instantaneamente
+Compilada - Antes de ser mandado pro console ou pro browser, voce precisa passar pelo compilador pro computador conseguir entender as instruções
+
+Baseada em prototipos - 
+Prototipo - Uma base pra uma grande quantidade de dados, que é um conjunto de funções em comum em todas essas estruturas
+Multiparadigma - Pode escolher se quer POO, Funcional, etc
+Comument utilizada em aplicações Web Client-Side - Linguagem da WEB, linguagem da Internet
+Segue o padrão ECMAScript
+
+Recursos Básicos
+
+Functions - Metodos que fazem uma lógica
+
+Console - pra fazer teste
+
+DOM - Document Object Model
+Elementos que existem na pagina
