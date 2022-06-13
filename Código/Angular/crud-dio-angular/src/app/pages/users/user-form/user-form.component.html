@@ -1,0 +1,42 @@
+<div class="card w-100 my-5">
+    <div class="card-body">
+        <h1 class="card-title text-center">Formulário de Usuarios</h1>
+        <form [formGroup]="userForm">
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Digite o seu nome" formControlName="nome" id="nome" class="form-control">
+                        <label for="nome">Nome</label>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="form-floating">
+                        <input type="text" placeholder="Digite o seu sobrenome" id="sobrenome"  formControlName="sobrenome"class="form-control">
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Digite a sua idade" id="idade" formControlName="idade" class="form-control">
+                        <label for="idade">Idade</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Digite a sua profissao" id="profissao" formControlName="profissao" class="form-control">
+                        <label for="profissao">Profissão</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="form-group col-12 mt-4">
+                    <button type="button" class="btn btn-outline-danger float-start">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success float-end" (click)="actionButton()">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
