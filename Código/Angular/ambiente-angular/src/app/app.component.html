@@ -1,0 +1,45 @@
+<h1 class="text-success text-center">Live angular Diretivas</h1>
+
+<h2 [ngStyle] ="{background: cont < 5 ? 'red' : 'green'}" [ngClass]="{custom: cont > 5}" class="text-center">Counter: {{cont}}</h2>
+
+<!-- Diretivas Estruturais-->
+<h2 *ngIf="cont > 5; else menor">Contador passou do 5</h2>
+
+<!-- <ng-template [ngIf]="cont > 7">
+  <h2>Contador maior que 5</h2>
+</ng-template> -->
+<ng-template #menor>
+  <h2>Contador menor que 5</h2>
+</ng-template>
+
+<ul [ngSwitch]="cont" class="list-group mx-auto col-3">
+
+  <li *ngSwitchCase="2" class="list-group-item">É IGUAL A 2</li>
+  <li *ngSwitchCase="3" class="list-group-item">É IGUAL A 3</li>
+  <li *ngSwitchCase="4" class="list-group-item">É IGUAL A 4</li>
+  <li *ngSwitchCase="5" class="list-group-item">É IGUAL A 5</li>
+  <li *ngSwitchCase="6" class="list-group-item">É IGUAL A 6</li>
+  <li *ngSwitchCase="7" class="list-group-item">É IGUAL A 7</li>
+  <li *ngSwitchCase="8" class="list-group-item">É IGUAL A 8</li>
+  <li *ngSwitchCase="9" class="list-group-item">É IGUAL A 9</li>
+  <li *ngSwitchCase="10" class="list-group-item">É IGUAL A 10</li>
+  <li *ngSwitchDefault="list-group-item">Default = 1</li>
+</ul>
+
+<app-list-people></app-list-people>
+<h3 appMarcaTexto corDeFundo="blue" corDoTexto="preto">{{nome}}</h3>
+<button class="btn btn-success col-4 mx-auto" (click)="clicou('Mateus Velinho')">Clique</button>
+
+<div class="col-4 mx-auto">
+  <input type="text" class="form-control" placeholder="Digite alguma coisa" [(ngModel)]="text">
+  <h4>Saida: {{text}}</h4>
+</div>
+<div class="container my-5">
+  <div class="row d-flex align-items-center justify-content-center">
+    <h2 class="text-center"> LISTAGEM DE PERSONAGENS RICK AND MORTY</h2>
+    <div class="col-12">
+      <app-list-api></app-list-api>
+    </div>
+  </div>
+</div>
+
