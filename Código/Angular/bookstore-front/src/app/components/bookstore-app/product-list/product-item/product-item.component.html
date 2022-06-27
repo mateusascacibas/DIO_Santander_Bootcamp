@@ -1,0 +1,13 @@
+<div class="card shadow-sm" style="border: 1px solid; margin-top: 2%;" >
+    <img src='{{"assets/img/" + livro.img}}' width="100%" class="bd-placeholder-img card-img-top">
+    <div class="card-body">
+        <p class="card-text">{{livro.name}}</p>
+        <p class="card-text">Categoria: {{livro.category}}</p>
+        <p class="card-text">Quantidade: {{livro.quantity}}</p>
+        <p class="card-text">Preço: {{livro.price | currency:'BRL'}}</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+            <button type="button" class="btn btn-sm btn-outline-primary" [routerLink]="['/books/'+ livro.id]">Detalhes</button>
+        </div>
+    </div>
+</div>

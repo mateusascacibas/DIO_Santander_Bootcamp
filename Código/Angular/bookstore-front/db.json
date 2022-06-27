@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Tite",
+      "price": 29.90,
+      "quantity": 3,
+      "category": "Esporte",
+      "img": "tite.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Harry Potter e a pedra filosofal",
+      "price": 35.00,
+      "quantity": 12,
+      "category": "Aventura",
+      "img": "harry.jpg"
+    },
+    {
+      "id": 3,
+      "name": "As aventura de Sherlock Holmes",
+      "price": 40.00,
+      "quantity": 4,
+      "category": "Mistério",
+      "img": "sherlock.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Código Limpo",
+      "price": 85.00,
+      "quantity": 9,
+      "category": "T.I",
+      "img": "codigo_limpo.jpg"
+    }
+  ]
+}
